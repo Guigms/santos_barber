@@ -1,0 +1,154 @@
+{
+  "project_info": {
+    "name": "SANTOS BARBER",
+    "tagline": "Estilo de Rua • Regua Máxima • Arte no Navalhado",
+    "language": "pt-BR",
+    "theme": "Dark Urban / Streetwear / Graffiti Aesthetic",
+    "logo_url": "https://customer-assets-wrfwihn1.emergentagent.net/job_0727184b-1105-4b27-ac10-78a589074373/artifacts/912b1308e56ac584_IMG_0478.PNG",
+    "contact": {
+      "whatsapp": "85 9209-7166",
+      "whatsapp_clean": "558592097166",
+      "whatsapp_link": "https://wa.me/558592097166?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Santos%20Barber.",
+      "address": "Rua Monteiro Lobato, 1621",
+      "city_state": "Fortaleza, CE",
+      "hours": "Segunda a Sexta: 08:00 às 19:00 | Sábado: 08:00 às 18:00"
+    }
+  },
+  "design_archetype": {
+    "name": "ARCHETYPE 7: STREET GRAFFITI & URBAN CHROME",
+    "description": "High visual impact, kinetic motion, spray paint textures, dark obsidian backdrop with metallic silver, neon glow highlights, and raw street energy.",
+    "vibe": "Authentic urban barbershop, aggressive precision, graffiti tag visual language, high contrast, tactile street culture"
+  },
+  "colors": {
+    "background_obsidian": "#060608",
+    "background_card": "#0F1015",
+    "background_surface": "#161822",
+    "text_primary": "#FFFFFF",
+    "text_muted": "#A1A1AA",
+    "accent_chrome": "#E2E8F0",
+    "accent_neon_green": "#00FF99",
+    "accent_graffiti_crimson": "#FF2A5F",
+    "accent_gold_silver": "#D4AF37",
+    "border_subtle": "rgba(255, 255, 255, 0.1)",
+    "border_active": "rgba(0, 255, 153, 0.4)",
+    "glow_shadow": "0 0 25px rgba(0, 255, 153, 0.2)"
+  },
+  "typography": {
+    "heading_font": "'Bebas Neue', 'Barlow Condensed', 'Impact', sans-serif",
+    "body_font": "'Outfit', 'Inter', sans-serif",
+    "mono_font": "'JetBrains Mono', monospace",
+    "hierarchy": {
+      "hero_h1": "text-5xl sm:text-7xl lg:text-8xl font-black uppercase tracking-tight leading-none",
+      "section_h2": "text-3xl sm:text-5xl font-extrabold uppercase tracking-wide",
+      "card_h3": "text-xl sm:text-2xl font-bold uppercase",
+      "body_text": "text-base sm:text-lg text-zinc-300 leading-relaxed",
+      "eyebrow_label": "text-xs sm:text-sm font-mono uppercase tracking-[0.25em] text-emerald-400"
+    }
+  },
+  "layout_and_spacing": {
+    "container_padding": "px-4 sm:px-8 lg:px-16",
+    "section_margin": "py-20 sm:py-32",
+    "grid_bento": "grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8",
+    "border_radius": "rounded-none or rounded-md (sharp/semi-sharp geometric cuts to fit graffiti aesthetic)"
+  },
+  "visual_effects_and_motion": {
+    "smooth_scroll": "Lenis smooth scroll mandatory",
+    "framer_motion_hooks": "Staggered scroll animations, scale spring on hover, glow pulse on CTA",
+    "hero_effects": [
+      "Graffiti tag logo with halo dripping ambient glow",
+      "Floating spray paint particles / light canvas effect",
+      "Kinetic typography over scroll",
+      "Interactive 3D haircut blade/hair clipper toggle animation",
+      "Dynamic background gradient mesh following cursor"
+    ],
+    "interactive_components": [
+      "Sticky blurred frosted header (bg-black/70 backdrop-blur-xl border-b border-white/10)",
+      "Infinite kinetic Marquee with street slogans",
+      "Interactive Cuts Menu with category filter (Degradê, Platinado, Barba, VIP Combos)",
+      "Visual Before/After hair transformation slider",
+      "Quick WhatsApp Agendamento Drawer / Modal",
+      "Floating WhatsApp Widget with pulse animation & quick time slot picker",
+      "Google Maps iframe embed with custom dark style overlay and address copy button",
+      "Audio vibe toggle button (street barber sounds effect)"
+    ]
+  },
+  "image_urls": {
+    "logo": "https://customer-assets-wrfwihn1.emergentagent.net/job_0727184b-1105-4b27-ac10-78a589074373/artifacts/912b1308e56ac584_IMG_0478.PNG",
+    "hero_barber": "https://images.unsplash.com/photo-1790270492178-fd5024dcf03e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHozfHx1cmJhbiUyMGJhcmJlcnNob3AlMjBoYWlyY3V0JTIwZmFkZSUyMGJlYXJkJTIwdHJpbSUyMHN0cmVldCUyMHN0eWxlfGVufDB8fHx8MTc5MjE2NzU2MHww&ixlib=rb-4.1.0&q=85",
+    "fade_cut_1": "https://images.pexels.com/photos/12074386/pexels-photo-12074386.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "fade_cut_2": "https://images.unsplash.com/photo-1790270534731-f944831999a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHxfHx1cmJhbiUyMGJhcmJlcnNob3AlMjBoYWlyY3V0JTIwZmFkZSUyMGJlYXJkJTIwdHJpbSUyMHN0cmVldCUyMHN0eWxlfGVufDB8fHx8MTc5MjE2NzU2MHww&ixlib=rb-4.1.0&q=85",
+    "beard_trim": "https://images.pexels.com/photos/39559309/pexels-photo-39559309.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "barber_in_action": "https://images.pexels.com/photos/19664861/pexels-photo-19664861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "barber_chair": "https://images.unsplash.com/photo-1621645582931-d1d3e6564943?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxiYXJiZXIlMjBoYWlyY3V0JTIwY2xpcHBlcnMlMjByYXpvciUyMHRvb2xzJTIwY2hhaXJ8ZW58MHx8fHwxNzkyMTY3NTY3fDA&ixlib=rb-4.1.0&q=85",
+    "barber_tools": "https://images.pexels.com/photos/7697712/pexels-photo-7697712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "services_data": [
+    {
+      "id": "corte-social-fade",
+      "name": "Degradê de Respeito / Fade",
+      "price": "R$ 45,00",
+      "duration": "45 min",
+      "description": "Acabamento alinhado com navalha, corte personalizado no perfil do cliente.",
+      "tag": "Mais Pedido"
+    },
+    {
+      "id": "nevou-platinado",
+      "name": "Nevou / Platinado Santos",
+      "price": "R$ 110,00",
+      "duration": "120 min",
+      "description": "Descoloração de alta performance + matização perfeita sem danificar o couro.",
+      "tag": "Tendência Rua"
+    },
+    {
+      "id": "barba-terapia",
+      "name": "Barba Terapia + Toalha Quente",
+      "price": "R$ 40,00",
+      "duration": "35 min",
+      "description": "Modelagem com máquina e navalha, balm hidratante e compressa aromática.",
+      "tag": "Relax"
+    },
+    {
+      "id": "combo-vip-santos",
+      "name": "Combo Santos VIP (Corte + Barba + Sobrancelha)",
+      "price": "R$ 80,00",
+      "duration": "75 min",
+      "description": "Experiência completa com direito a pigmentação e finalização com pomada matte.",
+      "tag": "Recomendado"
+    },
+    {
+      "id": "pigmentacao-risca",
+      "name": "Pigmentação + Risca Artística",
+      "price": "R$ 30,00",
+      "duration": "30 min",
+      "description": "Desenho personalizado no navalhado + pigmentação de alinhamento.",
+      "tag": "Arte de Rua"
+    }
+  ],
+  "test_ids": {
+    "header_nav": "santos-header-nav",
+    "logo": "santos-barber-logo",
+    "hero_cta": "hero-whatsapp-booking-button",
+    "cuts_section": "cuts-services-section",
+    "service_card": "service-item-card",
+    "location_section": "location-map-section",
+    "hours_widget": "opening-hours-widget",
+    "floating_whatsapp": "floating-whatsapp-btn",
+    "modal_booking": "booking-modal-whatsapp"
+  },
+  "instructions_to_main_agent": [
+    "Replace stock placeholder splash in App.js immediately with full high-visual-impact landing page.",
+    "Ensure Lenis smooth scroll and framer-motion animations give an organic weight to scrolling.",
+    "Implement neon green (#00FF99) and spray silver (#E2E8F0) glow highlights over pure dark obsidian background (#060608).",
+    "Make the WhatsApp buttons trigger direct wa.me links with custom pre-filled message in Portuguese.",
+    "Add interactive pricing tab / quick booking flow that leads straight to WhatsApp.",
+    "Ensure all key elements contain data-testid attributes specified in test_ids."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": [
+    "Do NOT use dark colors as standard gradients. Use pure high-contrast obsidian dark solid backgrounds with subtle noise texture and glows.",
+    "Never center-align whole body containers; use asymmetrical bento grid layouts.",
+    "Every interaction needs micro-animations: hover scale, glow transitions, scroll triggers.",
+    "Use 2-3x generous spacing with explicit padding inside containers to prevent text collisions.",
+    "Never use raw transparent header backgrounds over scrolled text; always use backdrop-blur glassmorphism (bg-black/70 backdrop-blur-xl border-b border-white/10).",
+    "All interactive buttons and key info blocks MUST include data-testid attributes."
+  ]
+}
