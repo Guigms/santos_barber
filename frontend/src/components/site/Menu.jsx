@@ -6,7 +6,7 @@ import { Eyebrow, MaskLines } from "./Reveal";
 
 const Row = ({ s, i, onEnter }) => (
   <motion.a
-    href={waLink(`Salve! Quero agendar: ${s.name}`)} target="_blank" rel="noreferrer"
+    href={waLink(s.msg ?? `Salve! Quero agendar: ${s.name}`)} target="_blank" rel="noreferrer"
     data-testid={`service-row-${s.id}`}
     onMouseEnter={() => onEnter(s.img)}
     className="group relative flex items-center gap-4 sm:gap-8 border-b border-white/10 py-6 sm:py-8 overflow-hidden"
@@ -20,7 +20,10 @@ const Row = ({ s, i, onEnter }) => (
       {s.name}
       <span className="block sm:inline sm:ml-4 font-mono2 text-xs normal-case tracking-normal font-normal text-zinc-400 group-hover:text-zinc-700">{s.time}</span>
     </span>
-    <span data-testid={`service-price-${s.id}`} className="relative font-display font-black text-2xl sm:text-4xl text-spray group-hover:text-black transition-colors">{s.price}</span>
+    <span data-testid={`service-price-${s.id}`} className={`relative font-display font-black text-spray group-hover:text-black transition-colors text-right ${s.quote ? "text-lg sm:text-3xl leading-none" : "text-2xl sm:text-4xl"}`}>
+      {s.quote && <span className="block font-mono2 font-normal text-[11px] sm:text-xs tracking-normal text-zinc-400 group-hover:text-zinc-700">sob</span>}
+      {s.price}
+    </span>
     <ArrowUpRight className="relative hidden sm:block text-zinc-400 group-hover:text-black group-hover:rotate-45 transition-transform duration-300" />
   </motion.a>
 );
@@ -41,7 +44,7 @@ export const Menu = () => {
       <div className="border-t border-white/10">
         {SERVICES.map((s, i) => <Row key={s.id} s={s} i={i} onEnter={setImg} />)}
       </div>
-      <p className="mt-8 font-tag text-zinc-400 text-lg -rotate-1">* clica no serviço e agenda direto no zap</p>
+      <p className="mt-8 font-tag text-zinc-400 text-lg -rotate-1">* clica no serviço e agenda direto no zap · corte a domicílio: orçamento direto com o barbeiro</p>
       <AnimatePresence>
         {img && (
           <motion.img key={img} src={img} alt="" aria-hidden style={{ x, y }}

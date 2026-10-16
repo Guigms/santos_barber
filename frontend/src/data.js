@@ -22,6 +22,7 @@ export const SERVICES = [
   { id: "combo", name: "Combo Corte + Barba", time: "75 min", price: "R$ 55", img: "/img/c3.jpg" },
   { id: "pigmentacao", name: "Pigmentação", time: "20 min", price: "R$ 20", img: "/img/c6.jpg" },
   { id: "sobrancelha", name: "Sobrancelha", time: "10 min", price: "R$ 10", img: "/img/c2.jpg" },
+  { id: "domicilio", name: "Corte a Domicílio", time: "vou até você", price: "Orçamento", quote: true, img: "/img/c1.jpg", msg: "Salve! Quero um orçamento de corte a domicílio. Meu endereço é: " },
 ];
 
 export const WEEK = [
