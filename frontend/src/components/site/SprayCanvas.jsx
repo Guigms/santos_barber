@@ -30,7 +30,7 @@ export const SprayCanvas = () => {
         const p = dots[i];
         p.life -= 0.008; p.y += 0.15;
         if (p.life <= 0) { dots.splice(i, 1); continue; }
-        ctx.fillStyle = `rgba(255,42,95,${p.life * 0.8})`;
+        ctx.fillStyle = `rgba(255,214,10,${p.life * 0.8})`;
         ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 7); ctx.fill();
       }
       id = requestAnimationFrame(draw);

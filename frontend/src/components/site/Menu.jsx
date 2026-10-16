@@ -20,7 +20,7 @@ const Row = ({ s, i, onEnter }) => (
       {s.name}
       <span className="block sm:inline sm:ml-4 font-mono2 text-xs normal-case tracking-normal font-normal text-zinc-400 group-hover:text-zinc-700">{s.time}</span>
     </span>
-    <span data-testid={`service-price-${s.id}`} className="relative font-display font-black text-2xl sm:text-4xl text-spray">{s.price}</span>
+    <span data-testid={`service-price-${s.id}`} className="relative font-display font-black text-2xl sm:text-4xl text-spray group-hover:text-black transition-colors">{s.price}</span>
     <ArrowUpRight className="relative hidden sm:block text-zinc-400 group-hover:text-black group-hover:rotate-45 transition-transform duration-300" />
   </motion.a>
 );

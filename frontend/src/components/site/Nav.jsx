@@ -33,7 +33,7 @@ export const Nav = () => (
         ))}
       </nav>
       <a href={waLink()} target="_blank" rel="noreferrer" data-testid="nav-whatsapp-btn"
-        className="inline-flex items-center gap-2 rounded-full bg-white text-black px-4 sm:px-5 py-2 text-sm font-semibold hover:bg-spray hover:text-white transition-colors">
+        className="inline-flex items-center gap-2 rounded-full bg-white text-black px-4 sm:px-5 py-2 text-sm font-semibold hover:bg-[var(--spray)] transition-colors">
         <MessageCircle size={16} /> Agendar
       </a>
     </div>

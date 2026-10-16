@@ -69,7 +69,7 @@ export const Hero = () => {
           <div className="mt-6 flex flex-wrap items-center gap-4">
             <motion.a href={waLink()} target="_blank" rel="noreferrer" data-testid="hero-whatsapp-btn"
               whileHover={{ scale: 1.05, rotate: -1.5 }} whileTap={{ scale: 0.96 }}
-              className="inline-flex items-center gap-2 rounded-full bg-spray text-white px-6 py-3 font-semibold shadow-[0_0_30px_rgba(255,42,95,0.45)]">
+              className="inline-flex items-center gap-2 rounded-full bg-spray text-black px-6 py-3 font-semibold shadow-[0_0_30px_rgba(255,214,10,0.4)]">
               <MessageCircle size={18} /> Chamar no WhatsApp
             </motion.a>
             <span className="font-mono2 text-xs uppercase tracking-[0.25em] text-zinc-400 flex items-center gap-2">

@@ -3,13 +3,13 @@
   --card: #0f1015;
   --chrome: #e8ebf0;
   --muted: #a1a1aa;
-  --spray: #ff2a5f;
+  --spray: #ffd60a;
   --line: rgba(255, 255, 255, 0.1);
 }
 
 html, body { background: var(--ink); color: var(--chrome); }
 body { font-family: "Outfit", sans-serif; overflow-x: hidden; }
-::selection { background: var(--spray); color: #fff; }
+::selection { background: var(--spray); color: #000; }
 
 .sb-root { position: relative; overflow-x: clip; }
 .font-display { font-family: "Big Shoulders Display", Impact, sans-serif; }
@@ -44,11 +44,11 @@ body { font-family: "Outfit", sans-serif; overflow-x: hidden; }
 
 .hero-spot {
   background: radial-gradient(520px circle at var(--mx, 50%) var(--my, 40%), rgba(255,255,255,0.09), transparent 60%),
-              radial-gradient(900px circle at 50% 120%, rgba(255,42,95,0.12), transparent 60%);
+              radial-gradient(900px circle at 50% 120%, rgba(255,214,10,0.1), transparent 60%);
 }
 
 .clip-slant { clip-path: polygon(0 0, 100% 0, 100% 92%, 94% 100%, 0 100%); }
-.tape { background: var(--spray); color: #fff; transform: rotate(-3deg); }
+.tape { background: var(--spray); color: #0a0a0a; transform: rotate(-3deg); }
 
 .marquee-track { display: flex; width: max-content; animation: marquee 60s linear infinite; }
 .marquee-track.rev { animation-direction: reverse; animation-duration: 75s; }
