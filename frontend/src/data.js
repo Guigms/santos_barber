@@ -7,22 +7,20 @@ export const waLink = (msg = "Salve! Quero agendar um horário na Santos Barber.
   `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
 
 export const CUTS = [
-  { id: "degrade", name: "Degradê na Régua", tag: "Mais pedido", img: "/img/c5.jpg" },
-  { id: "navalhado", name: "Navalhado", tag: "Navalha", img: "/img/c4.jpg" },
-  { id: "pompadour", name: "Pompadour + Barba", tag: "Clássico", img: "/img/c3.jpg" },
-  { id: "social", name: "Social Tesoura", tag: "Tesoura", img: "/img/c1.jpg" },
-  { id: "undercut", name: "Undercut", tag: "Rua", img: "/img/c2.jpg" },
-  { id: "maquina", name: "Acabamento Máquina", tag: "Precisão", img: "/img/c6.jpg" },
+  { id: "degrade", name: "", tag: "Mais pedido", img: "/img/c3.jpeg" },
+  { id: "navalhado", name: "", tag: "Navalha", img: "/img/corte2.jpg" },
+  { id: "pompadour", name: "", tag: "Clássico", img: "/img/corte2.jpg" }, 
+  { id: "social", name: "", tag: "Tesoura", img: "/img/corte10.jpg" },
+  { id: "undercut", name: "", tag: "Rua", img: "/img/corte4.jpg" },
+  { id: "maquina", name: "", tag: "Precisão", img: "/img/corte5.jpg" }, 
 ];
 
 export const SERVICES = [
-  { id: "corte", name: "Corte Degradê", time: "45 min", price: "R$ 35", img: "/img/c5.jpg" },
-  { id: "social", name: "Corte Social", time: "40 min", price: "R$ 30", img: "/img/c1.jpg" },
-  { id: "barba", name: "Barba na Navalha", time: "30 min", price: "R$ 25", img: "/img/c4.jpg" },
-  { id: "combo", name: "Combo Corte + Barba", time: "75 min", price: "R$ 55", img: "/img/c3.jpg" },
-  { id: "pigmentacao", name: "Pigmentação", time: "20 min", price: "R$ 20", img: "/img/c6.jpg" },
-  { id: "sobrancelha", name: "Sobrancelha", time: "10 min", price: "R$ 10", img: "/img/c2.jpg" },
-  { id: "domicilio", name: "Corte a Domicílio", time: "vou até você", price: "Orçamento", quote: true, img: "/img/c1.jpg", msg: "Salve! Quero um orçamento de corte a domicílio. Meu endereço é: " },
+  { id: "corte", name: "Corte Degradê", time: "45 min", price: "R$ 30",},
+  { id: "social", name: "Corte Social", time: "40 min", price: "R$ 25",},
+  { id: "combo", name: "Combo Corte + Barba", time: "75 min", price: "R$ 50",},
+  { id: "sobrancelha", name: "Sobrancelha", time: "10 min", price: "R$ 5", },
+  { id: "domicilio", name: "Corte a Domicílio", time: "vou até você", price: "Orçamento", quote: true, msg: "Salve! Quero um orçamento de corte a domicílio. Meu endereço é: " },
 ];
 
 export const WEEK = [

@@ -22,8 +22,17 @@ const Tile = ({ cut, span, i }) => (
     transition={{ duration: 1, delay: (i % 3) * 0.1, ease: [0.16, 1, 0.3, 1] }}
   >
     <div className="clip-slant relative h-full w-full overflow-hidden bg-[var(--card)]">
-      <img src={cut.img} alt={cut.name} loading="lazy"
-        className="h-full w-full object-cover grayscale contrast-125 brightness-75 scale-105 transition-[transform,filter] duration-700 ease-out group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-110" />
+      <img 
+        src={cut.img} 
+        alt={cut.name} 
+        loading="lazy"
+        /* O onError garante que se a foto falhar, um placeholder será exibido no lugar */
+        onError={(e) => { 
+          e.currentTarget.src = 'https://via.placeholder.com/800x800?text=Imagem+N%C3%A3o+Encontrada'; 
+        }}
+        /* Removido o scale-105 e o group-hover:scale-110 para tirar o zoom */
+        className="h-full w-full object-cover grayscale contrast-125 brightness-75 transition-[transform,filter] duration-700 ease-out group-hover:grayscale-0 group-hover:brightness-100" 
+      />
       <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
       <figcaption className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-3">
         <span className="font-display font-extrabold uppercase text-2xl sm:text-3xl leading-none">{cut.name}</span>
@@ -44,11 +53,14 @@ export const Cuts = () => (
         </h2>
       </div>
       <p className="max-w-sm text-zinc-400 text-sm sm:text-base">
-        Passa o mouse e vê a cor voltar. Cada corte é assinado como um tag no muro.
+        
       </p>
     </div>
-    <div className="grid grid-cols-1 md:grid-cols-12 auto-rows-[340px] md:auto-rows-[260px] gap-4 sm:gap-6">
-      {ORDER.map((idx, i) => <Tile key={CUTS[idx].id} cut={CUTS[idx]} span={SPANS[i]} i={i} />)}
+    
+    <div className="grid grid-cols-1 md:grid-cols-12 auto-rows-[420px] md:auto-rows-[380px] gap-4 sm:gap-6">
+      {ORDER.map((idx, i) => (
+        <Tile key={CUTS[idx].id} cut={CUTS[idx]} span={SPANS[i]} i={i} />
+      ))}
     </div>
   </section>
 );
